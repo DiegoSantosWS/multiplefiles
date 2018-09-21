@@ -18,13 +18,15 @@ class ReceiveFiles {
     }
 
     public function runn() {
-        self::dd($this->files["file"]);
+        return self::dd($this->files["file"]);
     }
 
     private static function dd($var) {
-        echo "<pre>";
-        print_r($var);
-        echo "</pre>";
+        $html  = "<pre>";
+        $html .= print_r($var);
+        $html .= "</pre>";
+
+        return $html;
     }
     
 }
