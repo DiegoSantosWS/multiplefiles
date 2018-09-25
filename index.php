@@ -11,31 +11,26 @@
     </head>
     <body>
         <div class="container">
-            <header class="text-primary mt-5">Send your files</header>
+            <header class="text-primary mt-5">LOGIN</header>
         </div>
         <div class="container mt-5">
             <form id="formFile" action="file.php" method="POST" class="form-group" enctype="multipart/form-data">
                 <div class="col-6">
                     <div class="form-group">
-                        <label class="custom-file"> File:</label>
-                        <input type="file" name="file[]" multiple="multiple" id="file" placeholder="Enter with an file" class="form-control" required="">
+                        <label class="custom-file"> Username:</label>
+                        <input type="text" name="user" id="user" placeholder="Enter with your username" class="form-control" required="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="custom-file"> Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Enter with your password" class="form-control" required="">
                     </div>
                 </div>
                 <div class="col-5">
                     <button type="submit" id="buttons" class="btn btn-success">Submit</button>
                 </div>
             </form>
-            <div class="col-12">
-                <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                        <h1 class="display-3">Return of the send</h1>
-                        <p class="lead"><progress id="progressbar" value="0" max="100" style="width:100%"></progress></p>
-                        <p class="lead"><span class="counting"></span></p>
-                        <hr class="my-2">
-                        <pre id="ret"></pre>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
